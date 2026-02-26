@@ -1,26 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>EduNex AI Voice Assistant</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Institute of Technology – Empowering Future Innovators Through Technology. Explore courses, admissions, fees and more." />
+  <title>Aurora Institute of Technology</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <div class="container">
-        <h1>🎤 EduNex AI Voice Assistant</h1>
-
-        <button id="startBtn">Start Talking</button>
-
-        <div class="output">
-            <p><strong>You Said:</strong></p>
-            <p id="userText">...</p>
-
-            <p><strong>AI Reply:</strong></p>
-            <p id="aiText">...</p>
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <div class="logo-text">
+          <span class="logo-main">Aurora</span>
+          <span class="logo-sub">Institute of Technology</span>
         </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#admissions" class="nav-link">Admissions</a></li>
+        <li><a href="#fees" class="nav-link">Fees</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <script src="script.js"></script>
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🎓 Ranked #1 Tech Institute 2024</div>
+      <h1 class="hero-title">Welcome to<br /><span class="gradient-text">Aurora Institute</span><br />of Technology</h1>
+      <p class="hero-subtitle">Empowering Future Innovators Through Technology</p>
+      <div class="hero-actions">
+        <a href="#admissions" class="btn btn-primary">Apply Now</a>
+        <a href="#courses" class="btn btn-outline">Explore Courses</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">12,000+</span>
+          <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Placement Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">Industry Partners</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ======= CAMPUS GALLERY ======= -->
+  <section class="campus-gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Campus</span>
+        <h2 class="section-title">Life at Aurora</h2>
+        <p class="section-desc">A world-class campus designed for innovation, collaboration, and excellence.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large">
+          <img src="building.jpeg" alt="Aurora main building" loading="lazy" />
+          <div class="gallery-label">Main Academic Block</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lab.jpeg" alt="AI & ML Laboratory" loading="lazy" />
+          <div class="gallery-label">Advanced AI Lab</div>
+        </div>
+        <div class="gallery-item">
+          <img src="green.jpeg" alt="Campus quad" loading="lazy" />
+          <div class="gallery-label">Campus Green</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= COURSES ======= -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h2 class="section-title">Courses Offered</h2>
+        <p class="section-desc">Choose from our industry-aligned programmes designed with the future in mind.</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-icon">💻</div>
+          <h3 class="course-title">Computer Engineering</h3>
+          <p class="course-desc">Master core computing principles, software engineering, operating systems, and modern development practices.</p>
+          <ul class="course-highlights">
+            <li>4-Year B.Tech Program</li>
+            <li>Industry Internships</li>
+            <li>Project-Based Learning</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-duration">⏱ 4 Years</span>
+            <a href="#admissions" class="btn-small">Apply →</a>
+          </div>
+        </div>
+        <div class="course-card featured">
+          <div class="course-badge">Most Popular</div>
+          <div class="course-icon">🤖</div>
+          <h3 class="course-title">AI & Machine Learning</h3>
+          <p class="course-desc">Dive deep into neural networks, deep learning, NLP, and computer vision with cutting-edge research facilities.</p>
+          <ul class="course-highlights">
+            <li>Dedicated AI Research Lab</li>
+            <li>Live Industry Projects</li>
+            <li>Global Certifications</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-duration">⏱ 4 Years</span>
+            <a href="#admissions" class="btn-small">Apply →</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-icon">📊</div>
+          <h3 class="course-title">Data Science</h3>
+          <p class="course-desc">Learn data analysis, statistical modelling, big data processing, and business intelligence with real datasets.</p>
+          <ul class="course-highlights">
+            <li>Python & R Programming</li>
+            <li>Big Data Tools</li>
+            <li>Capstone Projects</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-duration">⏱ 4 Years</span>
+            <a href="#admissions" class="btn-small">Apply →</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-icon">⚡</div>
+          <h3 class="course-title">Electronics Engineering</h3>
+          <p class="course-desc">Explore embedded systems, VLSI design, IoT, and signal processing in our state-of-the-art electronics labs.</p>
+          <ul class="course-highlights">
+            <li>IoT & Embedded Systems</li>
+            <li>Hardware Prototyping</li>
+            <li>Research Opportunities</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-duration">⏱ 4 Years</span>
+            <a href="#admissions" class="btn-small">Apply →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ADMISSIONS ======= -->
+  <section class="section section-alt" id="admissions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title">Admissions Process</h2>
+        <p class="section-desc">A clear, transparent, and student-friendly admissions journey.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">📝</div>
+          <h3>Online Application</h3>
+          <p>Fill out the online application form with your academic details, documents, and preferred course. Applications open year-round.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">📋</div>
+          <h3>Entrance Examination</h3>
+          <p>Appear for AIT entrance exam or submit valid JEE / State CET scores. Online exam slots available every month.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">🎤</div>
+          <h3>Personal Interview</h3>
+          <p>Selected candidates appear for a virtual or in-person interview with our faculty panel to assess aptitude and motivation.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon">🎓</div>
+          <h3>Admission Confirmed</h3>
+          <p>Receive offer letter, pay confirmation fee, complete document verification, and begin your Aurora journey!</p>
+        </div>
+      </div>
+      <div class="admission-cta">
+        <a href="#contact" class="btn btn-primary">Start Your Application</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FEES ======= -->
+  <section class="section" id="fees">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Financials</span>
+        <h2 class="section-title">Fee Structure</h2>
+        <p class="section-desc">Transparent, competitive, and scholarship-friendly fee plans for every student.</p>
+      </div>
+      <div class="fees-grid">
+        <div class="fee-card">
+          <div class="fee-header">
+            <span class="fee-icon">💻</span>
+            <h3>Computer Engineering</h3>
+          </div>
+          <div class="fee-amount">₹1,20,000 <span>/ year</span></div>
+          <ul class="fee-includes">
+            <li>✓ Tuition Fee</li>
+            <li>✓ Lab Access</li>
+            <li>✓ Library</li>
+            <li>✓ Digital Resources</li>
+            <li>✓ Career Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+        <div class="fee-card fee-featured">
+          <div class="fee-popular-tag">⭐ Best Value</div>
+          <div class="fee-header">
+            <span class="fee-icon">🤖</span>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="fee-amount">₹1,45,000 <span>/ year</span></div>
+          <ul class="fee-includes">
+            <li>✓ All CE Benefits</li>
+            <li>✓ AI Lab Access 24/7</li>
+            <li>✓ Cloud Computing Credits</li>
+            <li>✓ Global Cert Program</li>
+            <li>✓ Research Fellowship</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Enquire Now</a>
+        </div>
+        <div class="fee-card">
+          <div class="fee-header">
+            <span class="fee-icon">📊</span>
+            <h3>Data Science</h3>
+          </div>
+          <div class="fee-amount">₹1,35,000 <span>/ year</span></div>
+          <ul class="fee-includes">
+            <li>✓ Tuition Fee</li>
+            <li>✓ Data Lab Access</li>
+            <li>✓ Software Licences</li>
+            <li>✓ Industry Datasets</li>
+            <li>✓ Career Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+        <div class="fee-card">
+          <div class="fee-header">
+            <span class="fee-icon">⚡</span>
+            <h3>Electronics Engineering</h3>
+          </div>
+          <div class="fee-amount">₹1,15,000 <span>/ year</span></div>
+          <ul class="fee-includes">
+            <li>✓ Tuition Fee</li>
+            <li>✓ Electronics Lab</li>
+            <li>✓ Component Kits</li>
+            <li>✓ IoT Kits Included</li>
+            <li>✓ Career Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+      </div>
+      <div class="scholarship-banner">
+        <span class="scholarship-icon">🏆</span>
+        <div>
+          <strong>Merit Scholarships Available</strong>
+          <p>Top 10% scorers receive up to 50% fee waiver. Need-based scholarships also available.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-desc">We'd love to hear from you. Reach us anytime — or use our AI Voice Assistant!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>Aurora Campus, Tech Park Road,<br />Sector 17, Innovation City – 400 001</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 98765 43210<br />+91 22 4567 8900</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>admissions@aurora.edu.in<br />info@aurora.edu.in</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Mon – Fri: 9:00 AM – 5:00 PM<br />Sat: 10:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" />
+          </div>
+          <div class="form-group">
+            <label for="course">Interested Course</label>
+            <select id="course">
+              <option value="">Select a course</option>
+              <option>Computer Engineering</option>
+              <option>AI &amp; Machine Learning</option>
+              <option>Data Science</option>
+              <option>Electronics Engineering</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Your message or enquiry..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Enquiry 🚀</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <div class="logo-text">
+              <span class="logo-main">Aurora</span>
+              <span class="logo-sub">Institute of Technology</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Empowering Future Innovators Through Technology</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="#courses">Computer Engineering</a></li>
+            <li><a href="#courses">AI &amp; Machine Learning</a></li>
+            <li><a href="#courses">Data Science</a></li>
+            <li><a href="#courses">Electronics Engg.</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Tech Park Rd, Sector 17</li>
+            <li>📞 +91 98765 43210</li>
+            <li>✉️ info@aurora.edu.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aurora Institute of Technology. All rights reserved.</p>
+        <p>Powered by <span class="gradient-text">EduNex AI</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= AI VOICE ASSISTANT ======= -->
+  <div class="assistant-wrapper" id="assistantWrapper">
+    <div class="assistant-panel" id="assistantPanel">
+      <div class="assistant-header">
+        <div class="assistant-avatar">🤖</div>
+        <div>
+          <h4>EduNex AI Voice Assistant</h4>
+          <span class="assistant-status" id="assistantStatus">Ready to help</span>
+        </div>
+        <button class="assistant-close" id="assistantClose" aria-label="Close assistant">✕</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-wave" id="assistantWave">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="assistant-text-block">
+          <p class="assistant-label">You Said:</p>
+          <p class="assistant-output" id="userText">Press the mic and speak...</p>
+        </div>
+        <div class="assistant-text-block">
+          <p class="assistant-label">AI Reply:</p>
+          <p class="assistant-output" id="aiText">Hi! I'm EduNex. Ask me anything about Aurora Institute.</p>
+        </div>
+      </div>
+      <div class="assistant-suggestions">
+        <button class="suggestion-chip" onclick="askQuestion('What courses are offered?')">What courses?</button>
+        <button class="suggestion-chip" onclick="askQuestion('How to apply for admission?')">How to apply?</button>
+        <button class="suggestion-chip" onclick="askQuestion('What is the fee structure?')">Fee structure?</button>
+      </div>
+    </div>
+    <button class="mic-btn" id="startBtn" aria-label="Start EduNex AI Voice Assistant">
+      <span class="mic-icon">🎤</span>
+      <div class="mic-ring ring-1"></div>
+      <div class="mic-ring ring-2"></div>
+    </button>
+  </div>
+
+  <script src="/script.js"></script>
 </body>
 </html>
